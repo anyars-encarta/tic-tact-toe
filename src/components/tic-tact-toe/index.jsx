@@ -16,6 +16,7 @@ const TicTactToe = () => {
 
     const handleClick = (getCurrentSquare) => {
       let copySquares = [...squares];
+      if(copySquares[getCurrentSquare]) return;
       copySquares[getCurrentSquare] = isXTurn ? 'X' : 'O';
       setIsXTurn(!isXTurn);
       setSquares(copySquares)
