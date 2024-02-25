@@ -48,11 +48,16 @@ const TicTactToe = () => {
         setSquares(copySquares);
     };
 
+    const handleRestart = () => {
+        setIsXTurn(true);
+        setSquares(Array(9).fill(''))
+    };
+
     useEffect(() => {
         if(!GetWinner(squares) && squares.every(item => item !== '')) {
             setStatus('This is a draw! Please restart the game')
         } else if(GetWinner(squares)) {
-            setStatus(`Winner is ${GetWinner(squares)}`)
+            setStatus(`Winner is ${GetWinner(squares)}. Please restart the game!`)
         } else {
             setStatus(`Next player is ${isXTurn ? 'X' : 'O'}`)
         }
@@ -81,6 +86,7 @@ const TicTactToe = () => {
                 <Square value={squares[8]} onClick={() => handleClick(8)} />
             </div>
             <h1>{status}</h1>
+            <button onClick={handleRestart}>Reset</button>
         </div>
     );
 };
