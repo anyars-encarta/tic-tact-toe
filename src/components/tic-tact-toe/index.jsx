@@ -67,6 +67,7 @@ const TicTactToe = () => {
 
   return (
     <div className="tic-tact-toe-container">
+      <h1>TIC-TACT-TOE</h1>
       {/* div for first row - 0 1 2 */}
       <div className="row">
         <Square value={squares[0]} onClick={() => handleClick(0)} />
@@ -87,7 +88,7 @@ const TicTactToe = () => {
         <Square value={squares[7]} onClick={() => handleClick(7)} />
         <Square value={squares[8]} onClick={() => handleClick(8)} />
       </div>
-      <h1>{status}</h1>
+      <h2>{status}</h2>
       <button type="button" onClick={handleRestart}>Reset</button>
     </div>
   );
