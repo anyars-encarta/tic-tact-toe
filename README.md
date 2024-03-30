@@ -68,7 +68,7 @@
 
 LIVE DEMO
 
-> Live demo comg soon...
+> Visit the [live](https://anyars-encarta.github.io/tic-tact-toe/) page of the project here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
