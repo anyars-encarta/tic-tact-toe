@@ -39,7 +39,7 @@
 <!-- INTRO -->
 # 📖 TIC-TACT-TOE<a name="about-project"></a>
 
-> TIC-TACT-TOE is an interactive game that checks 3 matching X's or O's in a straight line to determine a win or a draw of the game. A single user could play the game
+> TIC-TACT-TOE is an interactive game that checks 3 matching X's or O's in a straight line to determine a win or a draw of the game. A single user could play the game, or multiple users.
 
 ## 🛠 Built With <a name="built-with"></a>
 1. React
